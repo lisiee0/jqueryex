@@ -22,9 +22,39 @@
  	console.log(typeof boo); // undefined
  	boo= 3<5
  	console.log(typeof boo); // boolean
+	
+ 	var person= "정우성";
+ 	var person= "유재석";
+ 	var person= "이효리";
+ 	
+ 	console.log(person);
+	
+</script>
+
+<script type="text/javascript">
+
+	// undefined와 null 비교
+	var myVal1;
+	var myVal2= null;
 		
+	console.log(myVal1);  // undefined
+ 	console.log(myVal2); // null
 	
+ 	console.log("========================="); 
+ 	console.log("123"==123); // true
+ 	console.log("123"===123); // false
 	
+ 	console.log(myVal1==myVal2); // undefined == null --> true
+ 	console.log(myVal1===myVal2); // undefined == null --> false
+ 	
+ 	console.log(""==false); // true ""를 false로 인식
+ 	console.log(""==0); // true ""를 0으로 인식
+	console.log(0==false); // true 	
+	
+ 	console.log(""===false); // false
+ 	console.log(""===0); // false
+	console.log(0===false); // false
+ 	
 </script>
 
 </html>
