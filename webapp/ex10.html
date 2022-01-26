@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		var test= function() {
+			console.log("testA 함수입니다.")
+		}
+		
+		function test() {
+			console.log("testB 함수입니다.")
+		}
+		
+		test(); // --> testA 함수 실행됨
+		console.log(typeof test);  // type= function 
+		
+	</script>
+</body>
+</html>

@@ -11,13 +11,27 @@
 
 	<script>
 	
+		// 기명함수
 		// 함수 정의
 		function testA() {
 			console.log("testA() 함수실행");
 		}
 		
+		// 정의부분이 아래에 있어도 실행o
 		// 함수 실행
 		testA();
+		
+		/////////////////////////////////////////
+		
+		// 익명함수 --> 변수에 할당
+		// 함수 정의
+		var testB= function() {
+			console.log("익명함수 실행")	
+		}
+		
+		// 함수 실행
+		// testB = 변수이름
+		testB();
 		
 		
 	</script>
