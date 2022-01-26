@@ -10,12 +10,29 @@
 
 <script>
 	
+	/*
 	var name= "global";
 	
-	function chechscope() {
+	function checkscope() {
 		var name= "local";
 		console.log(name);
 	}
-
+	
+	console.log(name); // global
+	checkscope(); //local
+	console.log(name); // global
+	*/
+	
+	var name= "global";
+	
+	function checkscope() {
+		name= "local";
+		console.log(name);
+	}
+	
+	console.log(name); // global
+	checkscope(); //local
+	console.log(name); // local
+	
 </script>
 </html>
