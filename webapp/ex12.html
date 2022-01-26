@@ -27,12 +27,15 @@
 	
 	function checkscope() {
 		name= "local";
+		name2= "로컬"
 		console.log(name);
 	}
 	
 	console.log(name); // global
+	console.log(name2) // error (undefined) 이 시점에선 존재하지 않음
 	checkscope(); //local
 	console.log(name); // local
+	console.log(name2); // 로컬
 	
 </script>
 </html>
