@@ -11,11 +11,32 @@
 		<li id="first" class="red">첫번째 아이템입니다.</li>
 		<li id="second" class="blue"><strong>두번째 아이템입니다.</strong></li>
 		<li id="third" class="del">세번째아이템입니다.</li>
-		<li><strong>네번째 아이템입니다.</strong></li>
-		
+		<li><strong>네번째 아이템입니다.</strong></li>		
 	</ul>
-	<input id="btn" type="button" VALUE="li요소추가" />
+	<button id="btn" type="button">li태그 추가버튼</button>
 </body>
 
+<script>
+
+	$("#btn").on("click", function() {
+		$("ul").append("<li>다섯번째 아이템입니다.</li>")
+		$("ul").append("<li>여섯번째 아이템입니다.</li>")
+		$("ul").append("<li>일곱번째 아이템입니다.</li>")
+	});
+
+	/*
+	$("li").on("click", function() {
+		var tag= $(this).text();
+		console.log(tag);
+	});
+	*/
+	
+	// 위임
+	$("ul").on("click", "li", function() { 
+		var tag= $(this).text();
+		console.log(tag);
+	});
+	
+</script>
 
 </html>
