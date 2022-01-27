@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>자바스크립 예제</h1>
+
+
+</body>
+
+<script>
+	// 배열만들기 (리스트)
+	var personList= [];
+	
+	// 정우성
+	var personVo01= {
+			name: "정우성",
+			hp: "010-2222-2222",
+			company: "02-2222-2222"
+	};
+	
+	
+	// 유재석
+	var personVo02= {};
+	personVo02.name= "유재석";
+	personVo02.hp= "010-1234-1234";
+	personVo02.company= "02-4334-4334"
+	
+
+	// 이효리
+	var personVo03= {
+			name: "이효리",
+			hp: "010-5555-5555"
+	};
+	personVo03.company= "02-1111-2222";
+	
+	
+
+	// 배열에 Vo 추가
+	personList.push(personVo01);
+	personList.push(personVo02);
+	personList.push(personVo03);
+	
+	for(var i= 0; i<personList.length; i++) {
+		console.log(personList[i].name);
+	}
+	
+	
+	
+</script>
+</html>
