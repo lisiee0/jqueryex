@@ -8,10 +8,25 @@
 
 
 	<div>
-		<button type="button">test</button>
-		<h1>이름 출력영역</h1>
-	
+		<button type="button" id="btn">test</button>
+		<h1 id="display">이름 출력영역</h1>
+		
 	</div>
 
 </body>
+
+<script>
+	window.onload= function() {
+		
+		// html --> 자바스크립트 객체화
+		var testButton= document.getElementById("btn");
+		var testArea= document.getElementById("display");
+		
+		testButton.onclick= function() {
+			console.log("button click");
+			testArea.innerHTML= "<font color='red'>홍길동</font>"
+		};
+		
+	};
+</script>
 </html>
